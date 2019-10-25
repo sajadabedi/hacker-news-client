@@ -1,7 +1,8 @@
 import React from 'react';
+import { StoriesContainer } from './containers/StoriesContainer';
 
 function App() {
-  return <div className="App"></div>;
+  return <StoriesContainer />;
 }
 
 export default App;

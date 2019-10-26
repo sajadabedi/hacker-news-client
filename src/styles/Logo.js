@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { styles } from '../constants/styles';
+import { styles } from './styles';
 
 const LogoStyle = styled.a`
   text-decoration: none;
@@ -10,8 +10,8 @@ const LogoStyle = styled.a`
   font-size: ${styles.fontSize['20px']};
   text-align: center;
   line-height: 2.5;
-  font-weight: 700;
-  background: ${styles.colors.orange};
+  font-weight: ${styles.weights.bold};
+  background: ${styles.colors.accent};
   position: relative;
   z-index: 1;
   cursor: pointer;
@@ -31,7 +31,7 @@ const LogoStyle = styled.a`
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: ${styles.colors.orange};
+    background-color: ${styles.colors.accent};
     z-index: -1;
     transition: all 0.2s ease-in-out;
   }

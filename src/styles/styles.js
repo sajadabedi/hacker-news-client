@@ -6,7 +6,7 @@ export const styles = {
   },
   colors: {
     dark: '#4a474c',
-    orange: '#fa6600',
+    accent: '#fa6600',
     gray10: '#b2b7cf'
   },
   fontSize: {
@@ -17,5 +17,11 @@ export const styles = {
     '24px': '1.5em',
     '28px': '1.75em',
     '32px': '2em'
+  },
+  weights: {
+    normal: '400',
+    medium: '500',
+    semiBold: '600',
+    bold: '700'
   }
 };

@@ -22,7 +22,7 @@ export const StoryMeta = styled.div`
 `;
 
 export const StoryMetaElement = styled.div`
-  margin-right: 24px;
+  margin-right: 16px;
   font-size: ${styles.fontSize['14px']};
   color: ${styles.colors.gray30};
 `;

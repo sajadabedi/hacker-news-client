@@ -11,9 +11,8 @@ import {
 export const Story = ({ id }) => {
   const [story, setStory] = useState({});
   useEffect(() => {
-    console.log(id);
     getStory(id).then(data => data && data.url && setStory(data));
-  }, []);
+  }, [id]);
   return story && story.url ? (
     <NewsArticle>
       <Headline>

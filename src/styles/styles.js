@@ -6,6 +6,7 @@ export const styles = {
   },
   colors: {
     dark: '#4a474c',
+    black: '#2a282b',
     accent: '#fa6600',
     gray10: '#b2b7cf',
     gray30: '#a1a6b6'
@@ -24,5 +25,8 @@ export const styles = {
     medium: '500',
     semiBold: '600',
     bold: '700'
+  },
+  transition: {
+    ease: 'all 100ms ease-in-out'
   }
 };

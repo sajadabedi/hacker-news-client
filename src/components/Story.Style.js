@@ -9,7 +9,12 @@ export const NewsArticle = styled.article`
 `;
 export const Headline = styled.h1`
   color: ${styles.colors.dark};
-  font-size:${styles.fontSize['20px']}
+  font-size: ${styles.fontSize['18px']};
+  transition: ${styles.transition.ease};
+  font-weight: ${styles.weights.medium};
+  &:hover {
+    color: ${styles.colors.black};
+  }
   a {
     color: inherit;
     text-decoration: none;

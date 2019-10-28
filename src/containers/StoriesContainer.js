@@ -22,10 +22,13 @@ export const StoriesContainer = () => {
       <GlobalStyle />
       <StoriesWrapper>
         <Header></Header>
-        {loading ? <Spinning /> : null}
-        {storyIds.slice(0, count).map(storyId => (
-          <Story key={storyId} id={storyId}></Story>
-        ))}
+        {loading ? (
+          <Spinning />
+        ) : (
+          storyIds
+            .slice(0, count)
+            .map(storyId => <Story key={storyId} id={storyId}></Story>)
+        )}
       </StoriesWrapper>
     </React.Fragment>
   );

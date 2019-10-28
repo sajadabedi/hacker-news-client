@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
+import { Header } from '../components/header/Header';
+import { Story } from '../components/Story';
+import { getStoryIds } from '../services/hackerNewsApi';
 import { GlobalStyle } from '../styles/GlobalStyles';
 import { StoriesWrapper } from '../styles/StoriesWrapper';
-import { Header } from '../components/header/Header';
-import { getStoryIds } from '../services/hackerNewsApi';
-import { Story } from '../components/Story';
 
 export const StoriesContainer = () => {
   const [storyIds, setStoryIds] = useState([]);

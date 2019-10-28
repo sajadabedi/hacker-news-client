@@ -7,7 +7,8 @@ export const styles = {
   colors: {
     dark: '#4a474c',
     accent: '#fa6600',
-    gray10: '#b2b7cf'
+    gray10: '#b2b7cf',
+    gray30: '#a1a6b6'
   },
   fontSize: {
     '14px': '0.875em',

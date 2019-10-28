@@ -21,7 +21,7 @@ export const StoryMeta = styled.div`
   flex-direction: row;
 `;
 
-export const StoryElement = styled.div`
+export const StoryMetaElement = styled.div`
   margin-right: 24px;
   font-size: ${styles.fontSize['14px']};
   color: ${styles.colors.gray30};

@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { MAX_STORIES, STORY_INCREMENT } from '../constants';
+import { debounce } from '../utils/debounce';
 
 export const useInfiniteScroll = () => {
   const [loading, setLoading] = useState(false);

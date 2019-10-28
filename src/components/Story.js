@@ -1,21 +1,28 @@
-import React, { memo, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import { mapTime } from '../mappers/mapTime';
 import { getStory } from '../services/hackerNewsApi';
-import { Headline, NewsArticle, StoryElement, StoryMeta } from './Story.Style';
+import {
+  Headline,
+  NewsArticle,
+  StoryMeta,
+  StoryMetaElement
+} from './Story.Style';
 
-export const Story = memo(function Story({ id }) {
+export const Story = ({ id }) => {
   const [story, setStory] = useState({});
   useEffect(() => {
+    console.log(id);
     getStory(id).then(data => data && data.url && setStory(data));
   }, []);
-  return (
+  return story && story.url ? (
     <NewsArticle>
       <Headline>
-        <a href="#">Machine learning and ketosis</a>
+        <a href={story.url}>{story.title}</a>
       </Headline>
       <StoryMeta>
-        <StoryElement>by: Sajad</StoryElement>
-        <StoryElement>posted: 2 days ago</StoryElement>
+        <StoryMetaElement>by: {story.by}</StoryMetaElement>
+        <StoryMetaElement>{mapTime(story.time)} ago</StoryMetaElement>
       </StoryMeta>
     </NewsArticle>
-  );
-});
+  ) : null;
+};

@@ -27,7 +27,7 @@ export const StoriesContainer = () => {
         ) : (
           storyIds
             .slice(0, count)
-            .map(storyId => <Story key={storyId} id={storyId}></Story>)
+            .map(storyId => <Story key={storyId} id={storyId} />)
         )}
       </StoriesWrapper>
     </React.Fragment>

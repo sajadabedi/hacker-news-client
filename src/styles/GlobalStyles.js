@@ -32,4 +32,8 @@ ul[class],
 ol[class] {
   padding: 0;
 }
+
+#root{
+  padding:0 16px;
+}
 `;

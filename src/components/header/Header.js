@@ -6,7 +6,6 @@ export const Header = () => {
   return (
     <HeaderStyle>
       <Logo></Logo>
-      {/* <Navigation></Navigation> */}
     </HeaderStyle>
   );
 };
